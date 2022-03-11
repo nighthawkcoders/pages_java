@@ -1,4 +1,4 @@
-package com.nighthawk.csa.hacks;
+package hacks.java.hacks;
 
 import java.util.ArrayList;
 
