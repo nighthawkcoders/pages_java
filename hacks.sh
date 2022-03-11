@@ -1,4 +1,3 @@
-cd hacks
-javac *.java
-java Menu
-rm *.class
+javac hacks/*.java
+java hacks/Menu
+rm hacks/*.class

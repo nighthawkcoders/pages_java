@@ -1,4 +1,4 @@
-//package hacks;
+package hacks;
 
 public class IntByReference {
     private int value;
