@@ -45,8 +45,7 @@ public class Menu {
     }
 
     /**
-     *  Iterate and print rows in HashMap
-     *
+     *  Iterate through and print rows in HashMap
      */
     public void print() {
         for (Map.Entry<Integer, MenuRow> pair : menu.entrySet()) {
@@ -54,8 +53,11 @@ public class Menu {
         }
     }
 
+    /**
+     *  To test run Driver
+     */
     public static void main(String[] args) {
-        Main.main(args);
+        Driver.main(args);
     }
 
 }
@@ -95,7 +97,7 @@ class MenuRow {
 }
 
 // The Main Class illustrates initializing and using Menu with Runnable action
-class Main {
+class Driver {
     /**
      *  Menu Control Example
      */
@@ -106,7 +108,6 @@ class Main {
                 new MenuRow("Swap", () -> IntByReference.main(null)),  // lambda style, () -> to point to Class.Method
                 new MenuRow("Matrix", () -> Matrix.main(null)),
                 new MenuRow("Number", () -> Number.main(null))
-
         };
 
         // Menu construction
