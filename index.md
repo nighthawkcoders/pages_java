@@ -9,7 +9,9 @@ You can use the [editor on GitHub](https://github.com/nighthawkcoders/pages_java
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 
-{% include_relative README.md %}
+### Java Hacks
+
+[Run on Replit.com](https://replit.com/@jmort1021/pagesjava-1)
 
 
 ### Markdown
