@@ -1,2 +1,2 @@
 language = "java"
-run = "bash hacks.sh"
+run = "javac src/Menu.java; java src/Menu; rm src/*.class"
