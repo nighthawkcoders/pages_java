@@ -1,4 +1,3 @@
-package hacks.java.hacks;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -53,6 +52,11 @@ public class Menu {
             System.out.println(pair.getKey() + " ==> " + pair.getValue().getTitle());
         }
     }
+
+    public static void main(String[] args) {
+        Main.main(args);
+    }
+
 }
 
 // The MenuRow Class has title and action for individual line item in menu

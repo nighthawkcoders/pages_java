@@ -1,2 +1,2 @@
 language = "java"
-run = "java hacks/Matrix.java"
+run = "bash hacks.sh"

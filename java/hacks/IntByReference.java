@@ -1,4 +1,3 @@
-package hacks.java.hacks;
 
 public class IntByReference {
     private int value;

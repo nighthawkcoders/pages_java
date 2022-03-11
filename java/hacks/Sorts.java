@@ -1,4 +1,3 @@
-package hacks.java.hacks;
 
 import java.time.Duration;
 import java.time.Instant;
