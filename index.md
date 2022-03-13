@@ -12,7 +12,7 @@ layout: default
 
 <!-- Remainder of this file is the story of how it is made -->
 
-## Home (Tianbin style)
+## Home
 This page uses an autoplay video loop as its backround.  This Code, HTML and CSS, is illustrated below.
 
 
