@@ -1,6 +1,6 @@
 # Algorithms
 
-* Replit contains documentations details
+* Embedded Replit contains all details
     * README shows week of assignment.
     * File contains comments that serve as documentation
 
