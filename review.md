@@ -16,9 +16,7 @@ This page contains learnings and key code snippets.  You should highlight things
 
 
 ### Tech Talk 0
-1. Menu built with Data Structure
-
-* The great find was Runnable (courtesy of Chenxin), this greatly reduced implementation.  Here is the data structure with Lambda Runnable initialization.
+* Menu built with Data Structure.  The great find was Runnable (courtesy of Chenxin), this greatly reduced implementation.  Here is the data structure with Lambda Runnable initialization.
 
 ```java
   // Row initialize
@@ -28,10 +26,10 @@ This page contains learnings and key code snippets.  You should highlight things
           new MenuRow("Matrix", () -> Matrix.main(null)),
           new MenuRow("Number", () -> Number.main(null))
   };
-```    
-* This shows using Runnable as an attribute
+```  
 
 ```java
+// Runnable used in Class
 class MenuRow {
     String title;       // menu item title
     Runnable action;    // menu item action, using Runnable
@@ -47,8 +45,7 @@ class MenuRow {
         this.action = action;
     }
 ```
-
-2. Menu with Try / Catch / Run
+* Menu using Try / Catch for success and errors.  Also, when all goes well it activates run from Runnable.
 
 ```java
 // Menu construction
@@ -82,9 +79,7 @@ class MenuRow {
   }
 ```
 
-3. Swap Number in Objects
-
-* No real challenges, Swap Low to High looks like this...
+* Swap Number in Objects.  No real challenges, Swap Low to High looks like this...
 
 ```java
 public void swapToLowHighOrder(IntByReference i) {
@@ -96,9 +91,7 @@ public void swapToLowHighOrder(IntByReference i) {
     }
 ```
 
-4. Print Matrix
-
-* No real challenges, IntelliJ directed me to StringBuilder
+* Print Matrix.  No real challenges, IntelliJ directed me to StringBuilder
 
 ```java
 // nest for loops to format output of a matrix
@@ -117,15 +110,13 @@ public void swapToLowHighOrder(IntByReference i) {
     }
 ```
 
-5. Deployed on replit
-
-* Java package being exactly correct to .replit path
+* Deployed and built on replit.  Java package being incorrect caused Java not to find externally referenced classes.  The package name needs to match directory.  If this is correct the javac (compile) should work correctly.
 
 ```java
 package src;
 ```
 
-* .replit file required several revisions from running a shell command, to this semi-colon delimeted run. 
+* Running on replit without Main.java at root.   To enable compatibility between replit and IntelliJ, it was necessary to try to build and run with a simple .replit run command.  First attempt was to create a base script (run.sh) assisted by Michael Zhang, later Raadwan shared using semi-colon delimited commands in .replit run environment variable.
  
 ```bash
 language = "java"
