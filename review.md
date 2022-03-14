@@ -8,11 +8,11 @@
 This page contains learnings and key code snippets.  You should highlight things that were challenges or consumed time.
 
 ### Week 1
-1. Describe Linked Lists
-2. Describe Java Generic T
-3. Queue Add and Delete
-4. Merge 2 Queues
-5. Build Stack and reverse Queue Order
+* Describe Linked Lists
+* Describe Java Generic T
+* Queue Add and Delete
+* Merge 2 Queues
+* Build Stack and reverse Queue Order
 
 
 ### Week 0 -- [Review Ticket](https://github.com/nighthawkcoders/pages_java/issues/1)
