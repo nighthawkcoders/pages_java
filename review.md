@@ -4,10 +4,10 @@
   </video>
 </div>
 
-# Reviews of Week [Perpetual Review Ticket](https://github.com/nighthawkcoders/pages_java/issues/1)
+# Reviews of Week
 This page contains learnings and key code snippets.  You should highlight things that were challenges or consumed time.
 
-### Tech Talk 1
+### Week 1
 1. Describe Linked Lists
 2. Describe Java Generic T
 3. Queue Add and Delete
@@ -15,7 +15,9 @@ This page contains learnings and key code snippets.  You should highlight things
 5. Build Stack and reverse Queue Order
 
 
-### Tech Talk 0
+### Week 0
+#### [Review Ticket](https://github.com/nighthawkcoders/pages_java/issues/1)
+
 * Menu built with Data Structure.  The great find was Runnable (courtesy of Chenxin), this greatly reduced implementation.  Here is the data structure with Lambda Runnable initialization.
 
 ```java
