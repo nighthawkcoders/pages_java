@@ -4,6 +4,10 @@
   </video>
 </div>
 
-# Notes
-### Unit 1
-### Unit 2
+# Notes and Reflections
+### Tech Talk 1
+1. Linked Lists
+### Tech Talk 0
+1. Menu with Data Structure
+2. Try / Catch
+3. Indivdiual Project
