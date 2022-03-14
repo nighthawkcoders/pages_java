@@ -121,11 +121,11 @@ public void swapToLowHighOrder(IntByReference i) {
 
 * Java package being exactly correct to .replit path
 
-``java
+```java
 package src;
 ```
 
-* **.replit** file required several revisions from running a shell command, to this semi-colon delimeted run. 
+* .replit file required several revisions from running a shell command, to this semi-colon delimeted run. 
  
 ```bash
 language = "java"
