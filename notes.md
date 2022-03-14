@@ -4,10 +4,10 @@
   </video>
 </div>
 
-# Challenges and Notes expected
+# Review of Week
 ### Tech Talk 1
 1. Describe Linked Lists
-2. Describe Java Generice T
+2. Describe Java Generic T
 3. Queue Add and Delete
 4. Merge 2 Queues
 5. Build Stack and reverse Queue Order
