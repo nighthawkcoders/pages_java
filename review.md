@@ -5,6 +5,8 @@
 </div>
 
 # Review of Week
+This page contains learnings and key code snippets.
+
 ### Tech Talk 1
 1. Describe Linked Lists
 2. Describe Java Generic T
