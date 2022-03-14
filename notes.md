@@ -4,10 +4,18 @@
   </video>
 </div>
 
-# Notes and Reflections
+# Challenges and Notes expected
 ### Tech Talk 1
-1. Linked Lists
+1. Describe Linked Lists
+2. Describe Java Generice T
+3. Queue Add and Delete
+4. Merge 2 Queues
+5. Build Stack and reverse Queue Order
+
+
 ### Tech Talk 0
-1. Menu with Data Structure
-2. Try / Catch
-3. Indivdiual Project
+1. Menu built with Data Structure
+2. Menu with Try / Catch / Run
+3. Swap Number in Objects
+4. Print Matrix
+5. Deployed on REPL 
