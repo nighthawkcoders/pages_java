@@ -4,7 +4,7 @@
   </video>
 </div>
 
-# Review of Week
+# Reviews of Week [Perpetual Review Ticket](https://github.com/nighthawkcoders/pages_java/issues/1)
 This page contains learnings and key code snippets.  You should highlight things that were challenges or consumed time.
 
 ### Tech Talk 1
