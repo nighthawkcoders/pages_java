@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Menu: custom implementation
  * @author     John Mortensen
  *
- * Uses String to contain Title for Option
+ * Uses String to contain Title for an Option
  * Uses Runnable to store Class-Method to be run when Title is selected
  */
 
