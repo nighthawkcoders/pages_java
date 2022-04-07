@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-/** Hi
+/**
  * Menu: custom implementation
  * @author     John Mortensen
  *
