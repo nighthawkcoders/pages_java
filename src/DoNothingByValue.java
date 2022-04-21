@@ -12,13 +12,13 @@ public class DoNothingByValue {
         this.val = 0;
         this.word = word.substring(0, 5);
 
-        System.out.print("changeIt3: ");
+        System.out.print("constructor: ");
         for (int k = 0; k < arr.length; k++) {
             arr[k] = 0;                          // int array is initialized to 0's, not needed
             System.out.print(arr[k] + " ");
 
         }
-        System.out.println(word);
+        System.out.println(this.word);
 
     }
 
@@ -72,9 +72,8 @@ public class DoNothingByValue {
         return word;
     }
 
-    // Variable name are Reference
-    // names of variables make no difference, they are just references to addresses
-    public static void changeIt4(Triple<int[], Integer, String> T) {
+    // Variable inside of Object Triple are references
+    public static Triple<int[], Integer, String> changeIt4(Triple<int[], Integer, String> T) {
         T.setOne(new int[5]);
         T.setTwo(0);                   // primitives are pass by value
         T.setThree(T.getThree().substring(0, 5)); // all wrapper classes have automatic "new", same as word = new String(word.substring(0, 5));
@@ -85,12 +84,13 @@ public class DoNothingByValue {
             System.out.print(i + " ");
         }
         System.out.println(T.getThree());
+
+        return T;
     }
 
 
     // Original method changed to main in order to be a Tester
     public static void main(String[] args) {
-
         // Does nothing
         int [] nums = {1, 2, 3, 4, 5};
         int value = 6;
@@ -115,7 +115,7 @@ public class DoNothingByValue {
         System.out.println("Limited return");
         int[] nums2 = {1, 2, 3, 4, 5};
         value = 6;
-        name = "blackboard";
+        name = "limited";
         name = changeIt3(nums2, name);
         System.out.print("main2: ");
         for (int num : nums2) {
@@ -132,7 +132,7 @@ public class DoNothingByValue {
         System.out.println("Do Something with Class");
         int[] nums3 = {1, 2, 3, 4, 5};
         value = 6;
-        name = "blackboard";
+        name = "classy";
         DoNothingByValue doSomething = new DoNothingByValue(nums3, value, name);
 
         System.out.print("main3: ");
@@ -149,9 +149,8 @@ public class DoNothingByValue {
         System.out.println("Do Something with Generics");
         int[] nums4 = {1, 2, 3, 4, 5};
         value = 6;
-        name = "blackboard";
-        Triple<int[],Integer,String> tri = new Triple<>(nums4, value, name);
-        changeIt4(tri);
+        name = "generics";
+        Triple<int[],Integer,String> tri = changeIt4(new Triple<>(nums4, value, name));
 
         System.out.print("main: ");
         for (int num : tri.getOne())
@@ -163,6 +162,7 @@ public class DoNothingByValue {
 
 }
 
+// This class can be used to pass variables by reference
 class Triple<T1, T2, T3> {
     T1 one;
     T2 two;
@@ -182,5 +182,4 @@ class Triple<T1, T2, T3> {
 
     public T3 getThree() { return this.three; }
     public void setThree(T3 three) { this.three = three; }
-
 }
