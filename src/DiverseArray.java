@@ -5,15 +5,15 @@ package src;
     1. 1D array int[] arr = { 1, 2, 3, 4, 5 }
     2. 2D array int[][] arr2D = { { 1, 2, 3, 4, 5 },
                                   { 2, 3, 4, 5, 6 } }
-    3. Arrays are not mutable, but can be established with variable sizes using "new"
+    3. Arrays dimensions are not mutable, but can be established with variable sizes using "new"
                 int[] arr = new int[rows]
                 int[][] arr2D = new int[rows][cols]
-    4. All iterations will use enhanced or conventional for loop, these apply to 1D and 2D
+    4. All iterations can use enhanced or conventional for loops, these apply to both 1D and 2D
                 for (int num : arr) { ... }  // enhanced, used when index is not required
                 for (int i = 0; i < arr.length; i++) { ... } // conventional, using arr.length to restrict i
     5. Same array comparisons (two indexes), bubble sort like adjacent comparison
                 for(int i = 0; i < sumsLength - 1; i++) {  // observe minus
-                    for (int j = i + 1; j < sumsLength; j++) { // observe j = i + 1
+                    for (int j = i + 1; j < sumsLength; j++) { // observe j = i + 1, to offset comparisons
  */
 
 public class DiverseArray {
@@ -42,20 +42,20 @@ public class DiverseArray {
         return sumList;
     }
 
-   public static boolean isDiverse(int[][] arr2D) {
-       int [] sums = rowSums(arr2D);
-       int sumsLength = sums.length;
+    public static boolean isDiverse(int[][] arr2D) {
+        int [] sums = rowSums(arr2D);
+        int sumsLength = sums.length;
 
-       // ij loop, two indexes needed in evaluation, similar to bubble sort iteration
-       for(int i = 0; i < sumsLength - 1; i++) {
-           for (int j = i + 1; j < sumsLength; j++) {
-               if (sums[i] == sums[j]) {
-                   return false;    // leave as soon as you find duplicate
-               }
-           }
-       }
-       return true; // all diverse checks have been made
-   }
+        // ij loop, two indexes needed in evaluation, similar to bubble sort iteration
+        for(int i = 0; i < sumsLength - 1; i++) {
+            for (int j = i + 1; j < sumsLength; j++) {
+                if (sums[i] == sums[j]) {
+                    return false;    // leave as soon as you find duplicate
+                }
+            }
+        }
+        return true; // all diverse checks have been made
+    }
 
     public static void main(String[] args) {
         int[][] mat1 = {
