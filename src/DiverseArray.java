@@ -1,8 +1,24 @@
 package src;
 
+// DiverseArray learnings
+/* All Array and 2D array questions will have similar patterns
+    1. 1D array int[] arr = { 1, 2, 3, 4, 5 }
+    2. 2D array int[][] arr2D = { { 1, 2, 3, 4, 5 },
+                                  { 2, 3, 4, 5, 6 } }
+    3. Arrays are not mutable, but can be established with variable sizes using "new"
+                int[] arr = new int[rows]
+                int[][] arr2D = new int[rows][cols]
+    4. All iterations will use enhanced or conventional for loop, these apply to 1D and 2D
+                for (int num : arr) { ... }  // enhanced, used when index is not required
+                for (int i = 0; i < arr.length; i++) { ... } // conventional, using arr.length to restrict i
+    5. Same array comparisons (two indexes), bubble sort like adjacent comparison
+                for(int i = 0; i < sumsLength - 1; i++) {  // observe minus
+                    for (int j = i + 1; j < sumsLength; j++) { // observe j = i + 1
+ */
+
 public class DiverseArray {
     public static int arraySum(int[] arr) {
-        int sum = 0;
+        int sum = 0;    // sum initializer
 
         // enhanced for loop as values are needed, not index
         for (int num : arr) {
@@ -14,13 +30,13 @@ public class DiverseArray {
     }
 
     public static int[] rowSums(int[][] arr2D) {
-        int rows = arr2D.length;
-        int[] sumList = new int[rows];
+        int rows = arr2D.length;        // remember arrays have length
+        int[] sumList = new int[rows];  // size of sumList is based on rows
 
         // conventional for loop as index used for sumList
         for (int i = 0; i < rows; i++) {
             sumList[i] = arraySum(arr2D[i]);
-            System.out.println(" = \t" + sumList[i]);  // debug
+            System.out.println("= \t" + sumList[i]);  // debug
         }
 
         return sumList;
@@ -34,11 +50,11 @@ public class DiverseArray {
        for(int i = 0; i < sumsLength - 1; i++) {
            for (int j = i + 1; j < sumsLength; j++) {
                if (sums[i] == sums[j]) {
-                   return false;
+                   return false;    // leave as soon as you find duplicate
                }
            }
        }
-       return true;
+       return true; // all diverse checks have been made
    }
 
     public static void main(String[] args) {
